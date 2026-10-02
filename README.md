@@ -17,4 +17,6 @@ This work uses the public KITTI and BDD100K datasets. The original datasets shou
 
 ## Code Availability
 
-The code is currently under organization and will be released after the article is officially published.
+The BDD100K subset image lists, sampling configuration, source metadata, and partition-checking tools are available in [reproducibility/bdd100k](reproducibility/bdd100k/).
+
+The detector implementation is currently under organization and will be released after the article is officially published. The partition materials do not contain trained weights or repeated-training performance results.

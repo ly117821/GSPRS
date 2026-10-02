@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "protocol_identity": "gsprs-bdd100k-proposed-v1",
+  "reconstruction_strategy": "seeded_hash_ranking_with_proportional_stratification",
+  "source_dataset": {
+    "name": "BDD100K",
+    "task": "2D object detection",
+    "official_source_splits": [
+      "train"
+    ],
+    "annotation_release": "BDD100K legacy 2018 per-image labels, Internet Archive mirror",
+    "annotation_filename": "train_metadata.json",
+    "annotation_sha256": "3520766b3ef93ed46986c280dc913a0d9a8bc3cb14f4103461ba76d64fc8865c",
+    "expected_source_count": 70000,
+    "download_documentation": "https://github.com/bdd100k/bdd100k/blob/master/doc/source/download.rst",
+    "data_download_directory": "https://dl.cv.ethz.ch/bdd100k/data/",
+    "source_url": "https://archive.org/download/bdd100k/bdd100k_labels.zip",
+    "source_provenance": {
+      "archive_sha256": "a8bed9c8f4371f85a57cbd7aec5d7d40f5723cecfa611de0923e01a18c39822a",
+      "archive_size_bytes": 154084208,
+      "name_transformation": "Append .jpg when absent in source JSON name.",
+      "outputs": {
+        "train_metadata.json": {
+          "records": 70000,
+          "sha256": "3520766b3ef93ed46986c280dc913a0d9a8bc3cb14f4103461ba76d64fc8865c",
+          "size_bytes": 13981261,
+          "unique_names": 70000
+        },
+        "val_metadata.json": {
+          "records": 10000,
+          "sha256": "f4c7a404197d723e804c78b5b366b1bcc4fd166a1a9c6a3996a19b3251eb7148",
+          "size_bytes": 1957790,
+          "unique_names": 10000
+        }
+      },
+      "projection": "Only name, weather/timeofday/scene attributes, source_split, and source_member are retained; frames/object annotations are omitted.",
+      "schema_version": "1.0",
+      "serialization": "Member paths sorted lexicographically; JSON object keys sorted; compact comma/colon separators; UTF-8; one terminal CRLF written explicitly on every platform.",
+      "source_kind": "public Internet Archive mirror of legacy 2018 per-image labels",
+      "source_metadata_url": "https://archive.org/metadata/bdd100k",
+      "source_url": "https://archive.org/download/bdd100k/bdd100k_labels.zip",
+      "train_val_overlap_count": 0
+    },
+    "candidate_count": 70000
+  },
+  "target_counts": {
+    "total": 6481,
+    "train": 4537,
+    "val": 1296,
+    "test": 648
+  },
+  "stratification": {
+    "attributes": [
+      "weather",
+      "timeofday",
+      "scene"
+    ],
+    "joint_or_marginal": "joint",
+    "allocation_method": "Hamilton largest remainder with exact integer arithmetic",
+    "tie_breaking": "ascending lexicographic stratum tuple",
+    "partition_quota_order": [
+      "train_from_selected",
+      "val_from_remaining",
+      "test_is_remainder"
+    ],
+    "missing_attribute_policy": "Represent missing/null/empty attributes as the empty string; keep them as separate strata.",
+    "rare_stratum_policy": "No minimum quota; very small strata may receive zero samples.",
+    "candidate_filter": "All uniquely named image records in the supplied official training annotation JSON; no filtering on object counts, detection categories, or model performance.",
+    "allow_missing_attribute_strata": true
+  },
+  "sampling": {
+    "seed": 20261001,
+    "seed_status": "recorded",
+    "random_generator": "SHA-256 seeded deterministic ranking",
+    "library": "Python standard library hashlib and json",
+    "library_version": "Algorithm defined by protocol_identity and exact canonical UTF-8 payload; independent of Python random implementation.",
+    "input_order": "Input annotation order is ignored; strata and filenames use lexicographic order."
+  },
+  "partitioning": {
+    "seed": 20261002,
+    "seed_status": "recorded",
+    "random_generator": "SHA-256 seeded deterministic ranking",
+    "library": "Python standard library hashlib and json",
+    "library_version": "Same canonical ranking algorithm as sampling, with a distinct stage and seed.",
+    "input_order": "Rank selected filenames within each stratum; assign train, then val, then test quotas."
+  },
+  "hash_payload": "UTF-8 JSON array [protocol_identity, stage, seed, weather, timeofday, scene, image_filename], ensure_ascii=false, separators=(comma,colon), no whitespace; stage is sample or partition. Sort by digest hex then filename.",
+  "split_file_order": "ascending image filename; UTF-8, LF, one original filename per line",
+  "official_validation_policy": "Use official validation only for supplementary evaluation; exclude it from new local training, validation and test sampling."
+}

@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+generated/
+metadata/
+imported/
+bdd100k_labels.zip

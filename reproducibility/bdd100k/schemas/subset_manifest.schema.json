@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GSPRS BDD100K subset manifest CSV row",
+  "description": "Validate each parsed CSV row. Empty metadata denotes unverified provenance, never an inferred source. image_id is a filename stem rather than an invented numeric annotation ID.",
+  "type": "object",
+  "required": ["image_id", "image_filename", "relative_path", "source_official_split", "local_split", "weather", "timeofday", "scene"],
+  "additionalProperties": false,
+  "properties": {
+    "image_id": {"type": "string", "minLength": 1},
+    "image_filename": {"type": "string", "minLength": 1},
+    "relative_path": {"type": "string", "description": "Image path relative to --images-root; no local absolute paths."},
+    "source_official_split": {"enum": ["train", "val", ""]},
+    "local_split": {"enum": ["train", "val", "test"]},
+    "weather": {"type": "string"}, "timeofday": {"type": "string"}, "scene": {"type": "string"}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "splits/bdd100k/train.txt": "8d8337deb5443887fa25dae5599b919862e9d7937f92ed3d2e87d76266d51e42",
+    "splits/bdd100k/val.txt": "07596104a85e848f9838b6cdae9b9d3d16f396e60565e8cdeb9a1fbd977962c2",
+    "splits/bdd100k/test.txt": "b58109dbf73c1eaadfca8a1cb2ccbf112d43572608feee46088e3ad3ce83564a",
+    "data/bdd100k/subset_manifest.csv": "6827c7809f20057e6f2c9a3ae92ca15d8def44c87da5e9c5cbe70c8e33a5027a"
+  }
+}

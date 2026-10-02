@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "a8bed9c8f4371f85a57cbd7aec5d7d40f5723cecfa611de0923e01a18c39822a",
+  "archive_size_bytes": 154084208,
+  "name_transformation": "Append .jpg when absent in source JSON name.",
+  "outputs": {
+    "train_metadata.json": {
+      "records": 70000,
+      "sha256": "3520766b3ef93ed46986c280dc913a0d9a8bc3cb14f4103461ba76d64fc8865c",
+      "size_bytes": 13981261,
+      "unique_names": 70000
+    },
+    "val_metadata.json": {
+      "records": 10000,
+      "sha256": "f4c7a404197d723e804c78b5b366b1bcc4fd166a1a9c6a3996a19b3251eb7148",
+      "size_bytes": 1957790,
+      "unique_names": 10000
+    }
+  },
+  "projection": "Only name, weather/timeofday/scene attributes, source_split, and source_member are retained; frames/object annotations are omitted.",
+  "schema_version": "1.0",
+  "serialization": "Member paths sorted lexicographically; JSON object keys sorted; compact comma/colon separators; UTF-8; one terminal CRLF written explicitly on every platform.",
+  "source_kind": "public Internet Archive mirror of legacy 2018 per-image labels",
+  "source_metadata_url": "https://archive.org/metadata/bdd100k",
+  "source_url": "https://archive.org/download/bdd100k/bdd100k_labels.zip",
+  "train_val_overlap_count": 0
+}

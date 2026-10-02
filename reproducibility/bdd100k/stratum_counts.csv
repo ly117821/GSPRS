@@ -1,0 +1,127 @@
+weather,timeofday,scene,source_count,selected_count,train,val,test
+clear,dawn/dusk,city street,1044,97,68,19,10
+clear,dawn/dusk,gas stations,3,0,0,0,0
+clear,dawn/dusk,highway,693,64,45,13,6
+clear,dawn/dusk,parking lot,13,1,1,0,0
+clear,dawn/dusk,residential,249,23,16,5,2
+clear,dawn/dusk,tunnel,1,0,0,0,0
+clear,dawn/dusk,undefined,1,0,0,0,0
+clear,daytime,city street,6647,615,431,123,61
+clear,daytime,gas stations,6,1,1,0,0
+clear,daytime,highway,3582,332,232,67,33
+clear,daytime,parking lot,84,8,6,1,1
+clear,daytime,residential,2134,198,139,39,20
+clear,daytime,tunnel,1,0,0,0,0
+clear,daytime,undefined,23,2,1,1,0
+clear,night,city street,15090,1397,978,279,140
+clear,night,gas stations,7,1,1,0,0
+clear,night,highway,6168,571,400,114,57
+clear,night,parking lot,71,7,5,1,1
+clear,night,residential,1430,132,92,27,13
+clear,night,tunnel,6,1,1,0,0
+clear,night,undefined,157,15,10,3,2
+clear,undefined,parking lot,1,0,0,0,0
+clear,undefined,residential,1,0,0,0,0
+foggy,dawn/dusk,city street,7,1,1,0,0
+foggy,dawn/dusk,highway,5,0,0,0,0
+foggy,dawn/dusk,parking lot,1,0,0,0,0
+foggy,dawn/dusk,residential,2,0,0,0,0
+foggy,daytime,city street,11,1,1,0,0
+foggy,daytime,highway,20,2,1,1,0
+foggy,daytime,residential,17,2,1,1,0
+foggy,night,city street,43,4,3,1,0
+foggy,night,highway,16,2,1,1,0
+foggy,night,residential,8,1,1,0,0
+overcast,dawn/dusk,city street,675,63,44,13,6
+overcast,dawn/dusk,highway,347,32,22,7,3
+overcast,dawn/dusk,parking lot,5,0,0,0,0
+overcast,dawn/dusk,residential,122,11,8,2,1
+overcast,dawn/dusk,undefined,1,0,0,0,0
+overcast,daytime,city street,4411,408,286,81,41
+overcast,daytime,gas stations,4,0,0,0,0
+overcast,daytime,highway,1966,182,127,37,18
+overcast,daytime,parking lot,56,5,3,1,1
+overcast,daytime,residential,1118,104,73,21,10
+overcast,daytime,undefined,7,1,1,0,0
+overcast,night,city street,41,4,3,1,0
+overcast,night,highway,27,3,2,1,0
+overcast,night,parking lot,1,0,0,0,0
+overcast,night,residential,3,0,0,0,0
+partly cloudy,dawn/dusk,city street,315,29,20,6,3
+partly cloudy,dawn/dusk,highway,204,19,13,4,2
+partly cloudy,dawn/dusk,parking lot,2,0,0,0,0
+partly cloudy,dawn/dusk,residential,48,4,3,1,0
+partly cloudy,dawn/dusk,undefined,1,0,0,0,0
+partly cloudy,daytime,city street,2225,206,144,41,21
+partly cloudy,daytime,gas stations,1,0,0,0,0
+partly cloudy,daytime,highway,1479,137,96,27,14
+partly cloudy,daytime,parking lot,31,3,2,1,0
+partly cloudy,daytime,residential,530,49,34,10,5
+partly cloudy,daytime,undefined,1,0,0,0,0
+partly cloudy,night,city street,23,2,1,1,0
+partly cloudy,night,highway,24,2,1,1,0
+partly cloudy,night,residential,2,0,0,0,0
+rainy,dawn/dusk,city street,206,19,13,4,2
+rainy,dawn/dusk,highway,79,7,5,1,1
+rainy,dawn/dusk,parking lot,2,0,0,0,0
+rainy,dawn/dusk,residential,41,4,3,1,0
+rainy,dawn/dusk,undefined,1,0,0,0,0
+rainy,daytime,city street,1640,152,106,31,15
+rainy,daytime,gas stations,2,0,0,0,0
+rainy,daytime,highway,539,50,35,10,5
+rainy,daytime,parking lot,13,1,1,0,0
+rainy,daytime,residential,324,30,21,6,3
+rainy,daytime,tunnel,2,0,0,0,0
+rainy,daytime,undefined,12,1,1,0,0
+rainy,night,city street,1556,144,101,29,14
+rainy,night,highway,488,45,32,9,4
+rainy,night,parking lot,5,0,0,0,0
+rainy,night,residential,123,11,8,2,1
+rainy,night,tunnel,1,0,0,0,0
+rainy,night,undefined,36,3,2,1,0
+rainy,undefined,highway,2,0,0,0,0
+rainy,undefined,parking lot,1,0,0,0,0
+rainy,undefined,residential,1,0,0,0,0
+rainy,undefined,tunnel,4,0,0,0,0
+rainy,undefined,undefined,5,0,0,0,0
+snowy,dawn/dusk,city street,310,29,20,6,3
+snowy,dawn/dusk,highway,46,4,3,1,0
+snowy,dawn/dusk,parking lot,5,0,0,0,0
+snowy,dawn/dusk,residential,76,7,5,1,1
+snowy,daytime,city street,1908,177,124,35,18
+snowy,daytime,gas stations,2,0,0,0,0
+snowy,daytime,highway,445,41,29,8,4
+snowy,daytime,parking lot,18,2,1,1,0
+snowy,daytime,residential,492,46,32,9,5
+snowy,daytime,undefined,8,1,1,0,0
+snowy,night,city street,1789,166,116,33,17
+snowy,night,highway,219,20,14,4,2
+snowy,night,parking lot,9,1,1,0,0
+snowy,night,residential,232,22,15,5,2
+snowy,night,undefined,10,1,1,0,0
+snowy,undefined,city street,1,0,0,0,0
+snowy,undefined,residential,1,0,0,0,0
+undefined,dawn/dusk,city street,396,37,26,7,4
+undefined,dawn/dusk,highway,67,6,4,1,1
+undefined,dawn/dusk,parking lot,2,0,0,0,0
+undefined,dawn/dusk,residential,62,6,4,1,1
+undefined,dawn/dusk,undefined,1,0,0,0,0
+undefined,daytime,city street,5001,463,324,93,46
+undefined,daytime,gas stations,2,0,0,0,0
+undefined,daytime,highway,891,83,58,17,8
+undefined,daytime,parking lot,27,3,2,1,0
+undefined,daytime,residential,1063,98,69,19,10
+undefined,daytime,tunnel,29,3,2,0,1
+undefined,daytime,undefined,28,3,2,0,1
+undefined,night,city street,235,22,15,4,3
+undefined,night,highway,99,9,6,2,1
+undefined,night,parking lot,8,1,1,0,0
+undefined,night,residential,25,2,1,0,1
+undefined,night,tunnel,13,1,1,0,0
+undefined,night,undefined,63,6,4,1,1
+undefined,undefined,city street,7,1,1,0,0
+undefined,undefined,highway,8,1,1,0,0
+undefined,undefined,parking lot,23,2,1,0,1
+undefined,undefined,residential,1,0,0,0,0
+undefined,undefined,tunnel,72,7,5,1,1
+undefined,undefined,undefined,11,1,1,0,0

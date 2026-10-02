@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "exit_code": 0,
+  "protocol_identity": "gsprs-bdd100k-proposed-v1",
+  "local_partition_sha256": "dd49a4c3800e05ead5d0a197761019f27bf60ed69402ec304169813e4a35251c",
+  "partition": {
+    "status": "VERIFIED",
+    "expected_counts": {
+      "train": 4537,
+      "val": 1296,
+      "test": 648
+    },
+    "actual_counts": {
+      "train": 4537,
+      "val": 1296,
+      "test": 648
+    },
+    "manifest_rows": 6481,
+    "hash_status": "VERIFIED",
+    "official_source_splits": [
+      "train"
+    ],
+    "missing_source_count": 0,
+    "missing_attribute_count": 0
+  },
+  "sampling_process": {
+    "status": "DECLARATIONS_COMPLETE",
+    "phases": {
+      "sampling": {
+        "seed_status": "recorded",
+        "seed": 20261001
+      },
+      "partitioning": {
+        "seed_status": "recorded",
+        "seed": 20261002
+      }
+    }
+  },
+  "evaluation_audit": {
+    "status": "VERIFIED",
+    "reference_sha256": "65a64e76f905805fb0dc7d7eb9711ab58e85ac6c83554405eed177e986b4e20b",
+    "reference_count": 10000,
+    "overlap_counts": {
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    "overlap_filenames": {
+      "train": [],
+      "val": [],
+      "test": []
+    }
+  },
+  "images": {
+    "checked": false,
+    "files_checked": 0,
+    "missing_count": 0,
+    "missing_examples": []
+  },
+  "errors": [],
+  "missing_materials": [],
+  "warnings": []
+}

@@ -1,0 +1,99 @@
+{
+  "train": {
+    "metadata_file": "bdd100k_2018_mirror_train_metadata.json",
+    "members": 70000,
+    "records": 70000,
+    "unique_names": 70000,
+    "missing": {},
+    "attribute_values": {
+      "weather": {
+        "clear": 37412,
+        "rainy": 5083,
+        "undefined": 8134,
+        "snowy": 5571,
+        "overcast": 8784,
+        "partly cloudy": 4886,
+        "foggy": 130
+      },
+      "timeofday": {
+        "daytime": 36800,
+        "dawn/dusk": 5033,
+        "night": 28028,
+        "undefined": 139
+      },
+      "scene": {
+        "city street": 43581,
+        "highway": 17414,
+        "residential": 8105,
+        "parking lot": 378,
+        "undefined": 366,
+        "tunnel": 129,
+        "gas stations": 27
+      }
+    },
+    "category_object_counts": {
+      "traffic light": 186301,
+      "traffic sign": 239961,
+      "car": 714121,
+      "person": 91435,
+      "bus": 11688,
+      "truck": 30012,
+      "rider": 4522,
+      "bike": 7227,
+      "motor": 3002,
+      "train": 136
+    },
+    "sha256": "3520766b3ef93ed46986c280dc913a0d9a8bc3cb14f4103461ba76d64fc8865c",
+    "size": 13981261
+  },
+  "val": {
+    "metadata_file": "bdd100k_2018_mirror_val_metadata.json",
+    "members": 10000,
+    "records": 10000,
+    "unique_names": 10000,
+    "missing": {},
+    "attribute_values": {
+      "weather": {
+        "overcast": 1239,
+        "clear": 5346,
+        "undefined": 1157,
+        "rainy": 738,
+        "snowy": 769,
+        "partly cloudy": 738,
+        "foggy": 13
+      },
+      "timeofday": {
+        "daytime": 5258,
+        "night": 3929,
+        "dawn/dusk": 778,
+        "undefined": 35
+      },
+      "scene": {
+        "city street": 6112,
+        "highway": 2499,
+        "tunnel": 27,
+        "residential": 1253,
+        "parking lot": 49,
+        "gas stations": 7,
+        "undefined": 53
+      }
+    },
+    "category_object_counts": {
+      "traffic sign": 34915,
+      "traffic light": 26891,
+      "car": 102540,
+      "rider": 649,
+      "motor": 452,
+      "person": 13265,
+      "bus": 1597,
+      "truck": 4247,
+      "bike": 1007,
+      "train": 15
+    },
+    "sha256": "f4c7a404197d723e804c78b5b366b1bcc4fd166a1a9c6a3996a19b3251eb7148",
+    "size": 1957790
+  },
+  "train_val_overlap": 0,
+  "name_transformation": "Append .jpg to source JSON name when absent; exact image filenames not validated against image files.",
+  "metadata_transformation": "Keep name and weather/timeofday/scene only, plus mirror split and archive member for provenance. Original per-image frames/object annotations retained in source ZIP, not in these JSONs."
+}
