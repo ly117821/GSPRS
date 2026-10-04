@@ -154,7 +154,7 @@ def main(argv=None):
     parser.add_argument("--source-provenance", type=Path, help="Optional public provenance JSON for a mirrored/derived metadata source.")
     parser.add_argument("--config", type=Path, default=PACKAGE_ROOT / "configs" / "sampling_config.json")
     parser.add_argument("--output-root", type=Path, default=PACKAGE_ROOT / "generated")
-    parser.add_argument("--force", action="store_true", help="Replace files in the selected output directory.")
+    parser.add_argument("--force", action="store_true", help="Replace a previously generated proposed split.")
     args = parser.parse_args(argv)
     try:
         if args.output_root.resolve() == PACKAGE_ROOT.resolve():

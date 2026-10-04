@@ -3,7 +3,7 @@
   "status": "PASS",
   "exit_code": 0,
   "protocol_identity": "gsprs-bdd100k-proposed-v1",
-  "local_partition_sha256": "dd49a4c3800e05ead5d0a197761019f27bf60ed69402ec304169813e4a35251c",
+  "local_partition_sha256": "385addd9a81d0d85ac5d51d27f30da20bfadbfe7ef503e0e96f37da31c20e7e7",
   "partition": {
     "status": "VERIFIED",
     "expected_counts": {
@@ -29,11 +29,11 @@
     "phases": {
       "sampling": {
         "seed_status": "recorded",
-        "seed": 20261001
+        "seed": 314159
       },
       "partitioning": {
         "seed_status": "recorded",
-        "seed": 20261002
+        "seed": 271828
       }
     }
   },

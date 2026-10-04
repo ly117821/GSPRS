@@ -12,8 +12,8 @@ class ProposedSamplingTests(unittest.TestCase):
     def records(self):
         return [{"name": "synthetic_test_%03d.jpg" % i, "attributes": {"weather": "clear" if i % 3 else "rainy", "timeofday": "daytime", "scene": "city street"}} for i in range(80)]
 
-    def select(self, records, seed=20261001):
-        return select_splits(records, protocol="gsprs-bdd100k-proposed-v1", sample_seed=seed, partition_seed=20261002, counts={"train": 35, "val": 10, "test": 5})
+    def select(self, records, seed=314159):
+        return select_splits(records, protocol="gsprs-bdd100k-proposed-v1", sample_seed=seed, partition_seed=271828, counts={"train": 35, "val": 10, "test": 5})
 
     def test_exact_counts_and_no_overlap(self):
         outputs, strata = self.select(self.records())
@@ -49,7 +49,7 @@ class ProposedSamplingTests(unittest.TestCase):
         self.assertTrue(any(row["weather"] == "" and row["source_count"] == 1 for row in strata))
 
     def protocol_config(self):
-        return json.loads((Path(__file__).resolve().parents[1] / "configs/sampling_config.json").read_text(encoding="utf-8"))
+        return json.loads((Path(__file__).resolve().parents[1] / "configs/proposed_sampling_config.json").read_text(encoding="utf-8"))
 
     def test_actual_protocol_and_seed_zero_are_accepted(self):
         config = self.protocol_config()

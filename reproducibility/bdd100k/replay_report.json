@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "protocol_identity": "gsprs-bdd100k-proposed-v1",
+  "fresh_generation_byte_identical": {
+    "splits/bdd100k/train.txt": true,
+    "splits/bdd100k/val.txt": true,
+    "splits/bdd100k/test.txt": true,
+    "data/bdd100k/subset_manifest.csv": true,
+    "stratum_counts.csv": true,
+    "SHA256SUMS.json": true,
+    "configs/sampling_config.json": true
+  },
+  "source_train_records": 70000,
+  "source_val_records": 10000,
+  "selected_unique_images": 6481,
+  "selected_overlap_with_source_val": 0,
+  "source_projection_rebuilt_from_pinned_archive": true,
+  "partition_fingerprint": "385addd9a81d0d85ac5d51d27f30da20bfadbfe7ef503e0e96f37da31c20e7e7",
+  "unit_tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "sampling_config_copies_identical": true,
+  "sampling_seed": 314159,
+  "partition_seed": 271828
+}
