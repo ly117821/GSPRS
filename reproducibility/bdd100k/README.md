@@ -38,7 +38,7 @@ The verifier checks split counts, duplicates, overlap, manifest membership, sour
 
 ## Repeated-training reporting plan
 
-The repeated-training plan uses three paired model-training seeds, `0`, `1`, and `2`, for FCOS-2B and GSPRS. The data partition, training configuration, preprocessing, checkpoint selection, and evaluator are kept fixed across seeds. BDD100K checkpoints are evaluated on both the local test split and the source validation scope; KITTI checkpoints are evaluated on the local validation split. The manuscript reports the completed-run count, mean, and sample standard deviation; per-run records can be organized with `records/repeated_runs.template.csv`.
+The repeated-training plan uses three paired model-training seeds (0, 1, and 2) for FCOS-2B and GSPRS. The data partition, training configuration, preprocessing, checkpoint selection, and evaluator are kept fixed across seeds. BDD100K checkpoints are evaluated on both the local test split and the source validation scope; KITTI checkpoints are evaluated on the local validation split. The manuscript reports the completed-run count, mean, and sample standard deviation; per-run records can be organized with the record template at records/repeated_runs.template.csv.
 
 The corresponding repeated-run result tables are provided in the supplementary material accompanying the manuscript. This directory provides the three-seed training plan and a machine-readable template for organizing the associated records.
 

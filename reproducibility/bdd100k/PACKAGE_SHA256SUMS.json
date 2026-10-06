@@ -2,7 +2,7 @@
   "algorithm": "sha256",
   "files": {
     ".gitignore": "efa17da14ca83d620439c95d082c533f3869e19af023473401d74950040567e0",
-    "README.md": "6cc3f8c5c455fbef5ab9b5ae799bc7d033c99d0bae4b1ab75cc90ab5de9ed642",
+    "README.md": "63504445c59a74c755d769b09c516011b170f88d60d849e5ced81f8740787712",
     "replay_report.json": "874cfaf12c054be5c4e926ee624634dea9e1e939a626490016c6f13c7da76d65",
     "SHA256SUMS.json": "cc27c2103aba49ae6c98f8fbc8fa58741648b349fecdc0a1f37f13104516b2f7",
     "stratum_counts.csv": "38c518d75ce3ea0934e0bc2a224bfbe95caafd780eca971e8ed9c8d1936cf072",
