@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "models": ["FCOS-2B", "GSPRS"],
+  "training_seeds": [0, 1, 2],
+  "runs_per_model_per_training_dataset": 3,
+  "pair_models_by_training_seed": true,
+  "fixed_configuration_across_training_seeds": true,
+  "evaluation_scopes": [
+    "bdd100k_local_test",
+    "bdd100k_full_validation",
+    "kitti_local_validation"
+  ],
+  "core_metrics": ["precision", "recall", "map50"],
+  "metric_unit": "percent",
+  "standard_deviation_ddof": 1,
+  "manuscript_reporting": [
+    "completed_run_count",
+    "training_seed_list",
+    "mean",
+    "sample_standard_deviation"
+  ],
+  "repository_reporting": [
+    "per_run_records",
+    "summary_json",
+    "fixed_split_fingerprint",
+    "fixed_config_fingerprint",
+    "checkpoint_fingerprints",
+    "code_revision"
+  ],
+  "record_template": "records/repeated_runs.template.csv"
+}
